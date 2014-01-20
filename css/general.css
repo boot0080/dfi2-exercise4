@@ -1,0 +1,274 @@
+@charset "UTF-8";
+/* Responsive Setup */
+
+@-moz-viewport { width: device-width; scale: 1;}
+@-ms-viewport { width: device-width; scale: 1;}
+@-webkit-viewport { width: device-width; scale: 1;}
+@-o-viewport { width: device-width; scale: 1;}
+@viewport { width: device-width; scale: 1;}
+
+html{
+	-moz-text-size-adjust: 100%;	
+	-ms-text-size-adjust: 100%;	
+	-webkit-text-size-adjust: 100%;	
+	-o-text-size-adjust: 100%;	
+	text-size-adjust: 100%;	
+}
+
+/* CSS */
+
+table p{
+	margin: 0 ;
+}
+
+html{
+	font-family: sans-serif;
+	margin: 0;
+	padding: 0;
+	width: 100%;
+}
+
+.logo img{
+	width: 10rem;
+}
+	
+header {
+	width: 100%;
+	padding: 1rem 0 0;
+	text-align:center;
+}
+
+strong{
+	font-weight: bold;
+}
+
+body{
+	width: 90%;
+	margin: 0 auto;
+}
+
+h1 {
+	font-family: sans-serif;
+	font-size: 24px;
+	text-align: center;
+}
+
+h2 {
+	font-family: sans-serif;
+	font-size: 18px;
+}
+
+p {
+	font-size: 1rem;
+	padding-right: 1.25rem;
+}
+
+main img{
+	width: 100%;
+	margin-top: 3.5rem;
+}
+
+
+/* Navigation */
+
+nav ul {
+	font-size: 1.2rem;
+	text-align: center;
+	margin-top: 2rem;
+}
+
+nav li {
+	display: inline-block;
+	margin: 0 1rem;
+}
+
+nav a, 
+nav a:link,
+nav a:visited {
+	display: inline-block;
+	text-transform: uppercase;
+	color: #59C2AE;
+	text-decoration: none;
+}
+
+nav a:hover,
+nav a:focus,
+nav a:active {
+	text-decoration: underline;
+}
+
+nav .selected {
+}
+
+@media only screen and (min-width: 35em) {
+	
+	nav ul{
+		float: right;
+		margin-top: 4rem;
+	}
+	
+	nav li{
+		margin: 
+		float: left;
+	}
+	.logo{
+		margin-right: 4rem;
+		float: left;	
+}
+
+}
+
+	
+/* Hours List Table */
+
+
+.hours-list li{
+	margin: 1em 0;
+	line-height: 1.3;
+}
+
+.hours-list dt{
+	font-weight: bold;
+}
+
+.hours-list dd:last-child{
+	color: #666;
+	font-style: italic;
+	font-size: 0.875rem;
+}
+
+
+.hours-table thead{
+	background-color: #aaa;
+	color: #fff;
+}
+
+.hours-table th,
+.hours-table td{
+	padding: 0.5rem 1rem;
+	text-align: left;
+	line-height: 2em;
+}
+
+.hours-table td:nth-child(odd){
+	font-style: italic;
+	color: #4F4F4F;
+}
+
+.hours-table th{
+	font-weight:bold;
+}
+
+.hours-table tr:nth-child(even){
+	background-color: #f1f1f1;
+}
+
+.hours-table tr:last-child{
+	border-bottom: 3px solid #666;
+}
+
+.hours-table{
+	margin-bottom: 2rem;
+	width: 100%;
+	display: none;
+	
+}
+
+@media only screen and (min-width: 50em) {
+	
+	.hours-table{
+		display: table;
+	}
+	
+	.hours-list{
+		display: none;
+	}
+	
+	img{
+		max-height: 10rem; 
+	}
+	
+}
+
+/* Price List & Table */
+
+.price-list li{
+	margin: 1em 0;
+	line-height: 1.3;
+}
+
+.price-list dt{
+	font-weight: bold;
+}
+
+.price-list dd:last-child{
+	color: #666;
+	font-style: italic;
+	font-size: 0.875rem;
+}
+
+
+.price-table thead{
+	background-color: #aaa;
+	color: #fff;
+}
+
+.price-table th,
+.price-table td{
+	padding: 0.5rem 1rem;
+	text-align: left;
+	line-height: 2em;
+}
+
+.price-table td:nth-child(odd){
+	font-style: italic;
+	color: #4F4F4F;
+}
+
+.price-table th{
+	font-weight:bold;
+}
+
+.price-table tr:nth-child(even){
+	background-color: #f1f1f1;
+}
+
+.price-table tr:last-child{
+	border-bottom: 3px solid #666;
+}
+
+.price-table{
+	margin-bottom: 2rem;
+	width: 100%;
+	display: none;
+	
+}
+
+@media only screen and (min-width: 25em) {
+	
+	.price-table{
+		display: table;
+	}
+	
+	.price-list{
+		display: none;
+	}
+	
+}
+	
+
+/*Footer*/
+
+.bottom {
+	height: 3rem;
+	background-color: #999;
+	padding: 1.5rem 2%;
+}
+
+.bottom p {
+	color: #FFF;
+	font-size: .75rem;
+	text-align: center;
+	font-size: 12px;
+	margin-top: -6px;
+}
